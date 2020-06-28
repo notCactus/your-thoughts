@@ -52,10 +52,13 @@ class _HomeState extends State<Home> {
                       (d) => msg.Message(message: d['message'], image: 'Image'),
                     )
                     .toList();
-                return ListView.builder(
-                  itemCount: _messages.length,
-                  itemBuilder: (context, i) => Message(
-                    message: _messages[i].message,
+                return Container(
+                  margin: EdgeInsets.only(bottom: 56),
+                  child: ListView.builder(
+                    itemCount: _messages.length,
+                    itemBuilder: (context, i) => Message(
+                      message: _messages[i].message,
+                    ),
                   ),
                 );
             }
