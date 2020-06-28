@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-class SendMessage extends StatefulWidget {
-  @override
-  _SendMessageState createState() => _SendMessageState();
-}
+class SendMessage extends StatelessWidget {
+  final Function msgFunction;
 
-class _SendMessageState extends State<SendMessage> {
+  SendMessage({
+    Key key,
+    this.msgFunction,
+  }) : super(key: key);
+
   final TextEditingController _textController = TextEditingController();
 
   void _handleSubmitted(String text) {
+    msgFunction(text);
     _textController.clear();
   }
 
@@ -22,7 +25,7 @@ class _SendMessageState extends State<SendMessage> {
           Flexible(
             child: TextField(
               controller: _textController,
-              onSubmitted: _handleSubmitted,
+              onSubmitted: (value) => _handleSubmitted(value),
               decoration: InputDecoration.collapsed(
                 hintText: 'Send a message',
               ),
