@@ -15,6 +15,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: _white,
         accentColor: Colors.grey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        bottomSheetTheme: BottomSheetThemeData(
+          backgroundColor: Colors.white,
+        ),
       ),
       home: Home(),
     );
