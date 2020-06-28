@@ -2,7 +2,7 @@
 
 Your Thoughts is an app that helps you destress by allowing you to anonymously share your thoughts and read other people's thoughts.
 
-This project was mad under the flutter hackathon #Hack20.
+This project was made under the flutter hackathon #Hack20.
 
 ## Installation
 1. Download this repository and install Flutter on your computer.
