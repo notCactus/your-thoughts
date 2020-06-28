@@ -1,6 +1,6 @@
-# Your Thoughts
+# YourThoughts
 
-Your Thoughts is an app that helps you destress by allowing you to anonymously share your thoughts and read other people's thoughts.
+YourThoughts is an app that helps you destress by allowing you to anonymously share your thoughts and see other people's thoughts.
 
 This project was made under the flutter hackathon #Hack20.
 
